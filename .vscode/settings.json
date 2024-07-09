@@ -1,0 +1,10 @@
+// Excluí os arquivos pyc pycache e pyteste_cache
+{
+    "files.exclude": {
+        "**/*.pyc": {
+            "when": "$(basename).py"
+        },
+        "**/__pycache__": true,
+        "**/*.pyctest_cache": true,
+    }
+}
