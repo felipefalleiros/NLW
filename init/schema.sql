@@ -25,7 +25,7 @@ CREATE TABLE IF NOT EXISTS 'links' (
 CREATE TABLE IF NOT EXISTS 'participants' (
     id TEXT PRIMARY KEY,
     trip_id TEXT,
-    emails_to_invite TEXT NOT NULL,
+    emails_to_invite_id TEXT NOT NULL,
     name TEXT NOT NULL,
     is_confirmed INTEGER, -- 1 para verdadeiro (true), 0 para falso (false)
     FOREIGN KEY (trip_id) REFERENCES trips(id)
